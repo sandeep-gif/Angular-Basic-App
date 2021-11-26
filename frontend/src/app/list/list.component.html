@@ -1,0 +1,17 @@
+<div class="card mt-4" style="background-color:rgb(204, 225, 226)" *ngFor = "let blog of blogs" >
+    <div class="card-body" >
+        <h4 class="card-title">{{blog.title}}</h4>
+    <div class="card-subtitle text-muted mb-2">
+        {{blog.catagory}}
+    </div>
+    <div class="card-text mb-2">
+        {{blog.content}}
+    </div>    
+    <div>
+        <button class="btn btn-success" (click)='doUpdate(blog)'>Edit</button>
+        <button class="btn btn-danger mx-3" (click)='doDelete(blog)'>Delete</button>
+    </div>
+</div>
+</div>
+       
+           
